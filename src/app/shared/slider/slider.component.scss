@@ -1,0 +1,17 @@
+.design__container {
+  margin: auto;
+  margin: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .design__image {
+    width: 100%;
+  }
+
+}
+
+.selected {
+  border: 3px solid #028C50;
+}

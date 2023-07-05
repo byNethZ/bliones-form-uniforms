@@ -1,0 +1,28 @@
+.emoticono {
+  width: 80%;
+  max-width: 20rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: block;
+}
+
+.thanks {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #5e5e5e;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__sub {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #5e5e5e;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
