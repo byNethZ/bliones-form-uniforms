@@ -1,12 +1,19 @@
 <section class="card">
   <h3 class="card__title">Ayúdanos a elegir los diseños que más te gusten</h3>
-  <img class="card__shirt" src="assets/imgs/shirt.jpg" alt="Shirt" />
+  <img class="card__shirt" src="assets/imgs/simulaciones.gif" alt="Shirt" />
   <div class="card__content">
     <ng-content></ng-content>
   </div>
   <button
     (click)="next()"
-    class="card__button {{ images.length === 0 ? 'disabled' : '' }}"
+    class="card__button {{
+      (images.length <= 2 && button === 'siguiente') ||
+      (user.name === '' && button === 'enviar') ||
+      (user.businessName === '' && button === 'enviar') ||
+      (user.phone === '' && button === 'enviar')
+        ? 'disabled'
+        : ''
+    }}"
     [disabled]="images.length === 0"
   >
     {{ button }}

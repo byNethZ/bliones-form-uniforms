@@ -1,20 +1,20 @@
 <form class="form">
   <input
-    (change)="setName(name.value)"
+    (keyup)="setName(name.value)"
     #name
     class="form__input"
     type="text"
     placeholder="NOMBRE"
   />
   <input
-    (change)="setBusinessName(bussinesName.value)"
+    (keyup)="setBusinessName(bussinesName.value)"
     #bussinesName
     class="form__input"
     type="text"
     placeholder="NOMBRE NEGOCIO"
   />
   <input
-    (change)="setPhone(phone.value)"
+    (keyup)="setPhone(phone.value)"
     #phone
     class="form__input"
     type="text"

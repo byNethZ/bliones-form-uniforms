@@ -1,16 +1,15 @@
+<p class="instructions">Selecciona al menos 3 diseños que te gusten</p>
 <p-carousel
   [value]="designs"
   [responsiveOptions]="responsiveOptions"
   [circular]="true"
->
-  <ng-template let-design pTemplate="item">
+  [showIndicators]="false"
+  ><ng-template let-design pTemplate="item">
     <div class="design__container">
       <img
         (click)="add(design)"
         class="design__image {{ images.includes(design.id) ? 'selected' : '' }}"
         src="{{ design.path }}"
         alt="{{ design.name }}"
-      />
-    </div>
-  </ng-template>
-</p-carousel>
+      /></div></ng-template
+></p-carousel>

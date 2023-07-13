@@ -1,6 +1,11 @@
+.instructions {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
+}
+
 .design__container {
   margin: auto;
-  margin: .5rem;
   display: flex;
   justify-content: center;
 }
