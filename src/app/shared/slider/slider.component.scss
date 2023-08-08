@@ -6,8 +6,9 @@
 
 .design__container {
   margin: auto;
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -18,5 +19,16 @@
 }
 
 .selected {
-  border: 3px solid #028C50;
+  border: 5px solid #028C50;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/imgs/check.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
